@@ -110,3 +110,7 @@ class RegularizedSVDRecommender:
         top_df = pd.DataFrame(top_candidates, columns=["item_id", "predicted_rating"])
         top_df = top_df.merge(df_items[["item_id", "title", "release_date"]], on="item_id", how="left")
         return top_df
+
+
+# Alias
+FunkSVDRecommender = RegularizedSVDRecommender

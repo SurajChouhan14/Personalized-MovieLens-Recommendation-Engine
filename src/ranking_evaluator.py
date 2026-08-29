@@ -52,3 +52,7 @@ class RecommenderRankingEvaluator:
             "hit_ratio_at_k": round(float(np.mean(hits)), 4),
             "ndcg_at_k": round(float(np.mean(ndcgs)), 4)
         }
+
+# Alias
+TopKRankingEvaluator = RecommenderRankingEvaluator
+
